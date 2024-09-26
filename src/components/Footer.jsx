@@ -41,16 +41,16 @@ const Footer = () => {
                 <a href="tel:+234 9066886300" className="mt-3 d-block mb-1 text-white">Tel:+234 9066886300</a>
                 <a href="mailto:olatunjiolanrewaju228@gmail.com" className="mt-2 d-block mb-1 text-white">Mail: olatunjiolanrewaju228@gmail.com</a>
                 <div className="social_icons d-flex align-center gap-30">
-                  <a className="text-white" href="">
+                  <a className="text-white" href="https://Linkedin.com">
                     <BsLinkedin className="fs-4" />
                   </a>
-                  <a className="text-white" href="">
+                  <a className="text-white" href="https://github.com">
                     <BsGithub className="fs-4" />
                   </a>
-                  <a className="text-white" href="">
+                  <a className="text-white" href="https://youtube.com">
                     <BsYoutube className="fs-4" />
                   </a>
-                  <a className="text-white" href="">
+                  <a className="text-white" href="https://instagram.com">
                     <BsInstagram className="fs-4" />
                   </a>
                 </div>
