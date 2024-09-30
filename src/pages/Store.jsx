@@ -5,6 +5,10 @@ import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
 import Color from "../components/Color";
 import Container from "../components/Container";
+import gr from "../images/gr.svg"
+import gr2 from "../images/gr2.svg"
+import gr3 from "../images/gr3.svg"
+import gr4 from "../images/gr4.svg"
 
 const Store = () => {
   const [grid,setGrid] = useState(4);
@@ -186,9 +190,9 @@ const Store = () => {
                     <p className="mb-0 d-block" style={{ width: "100px" }}>
                       Sort By:
                     </p>
-                    <select name="" className="form-control form-select" id="">
+                    <select name="" defaultValue={"manual"} className="form-control form-select" id="">
                       <option value="manual">Featured</option>
-                      <option value="best-selling" selected="selected">
+                      <option value="best-selling" >
                         Best selling
                       </option>
                       <option value="title-ascending">
@@ -218,7 +222,7 @@ const Store = () => {
                         onClick={() => {
                           setGrid(3);
                         }}
-                        src="images/gr4.svg"
+                        src={gr4}
                         className="d-block img-fluid"
                         alt="grid"
                       />
@@ -226,7 +230,7 @@ const Store = () => {
                         onClick={() => {
                           setGrid(4);
                         }}
-                        src="images/gr3.svg"
+                        src={gr3}
                         className="d-block img-fluid"
                         alt="grid"
                       />
@@ -234,7 +238,7 @@ const Store = () => {
                         onClick={() => {
                           setGrid(6);
                         }}
-                        src="images/gr2.svg"
+                        src={gr2}
                         className="d-block img-fluid"
                         alt="grid"
                       />
@@ -242,7 +246,7 @@ const Store = () => {
                         onClick={() => {
                           setGrid(12);
                         }}
-                        src="images/gr.svg"
+                        src={gr}
                         className="d-block img-fluid"
                         alt="grid"
                       />
@@ -251,7 +255,7 @@ const Store = () => {
                 </div>
               </div>
               <div className="products-list pb-5">
-                <div className="d-flex gap-20 flex-wrap">
+                <div className="d-flex gap-30 flex-wrap">
                 <ProductCard grid={grid} />
                 </div>
               </div>

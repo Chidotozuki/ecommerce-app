@@ -134,7 +134,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <div className="text-center mb-0 text-white">
-                &copy; {new Date().getFullYear} Powered by PlayerCoder.
+                &copy; {new Date().getFullYear()} Powered by PlayerCoder.
               </div>
             </div>
           </div>
