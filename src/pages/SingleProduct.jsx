@@ -4,8 +4,13 @@ import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 import ReactStars from "react-rating-stars-component";
 import { useState } from "react";
+import ReactImageZoom from 'react-image-zoom';
+
+ 
 
 const SingleProduct = () => {
+  const props = {width: 500, height: 500, zoomWidth: 500, img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-ferarcosn-190819.jpg&fm=jpg"};
+
   const [orderedProduct, setorderedProduct] = useState(true);
   return (
     <>
@@ -14,7 +19,19 @@ const SingleProduct = () => {
       <div className="main-product-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-image">
+                <div>
+                <ReactImageZoom {...props} />
+                </div>
+              </div>
+              <div className="other-product-images d-flex flex-wrap gap-15">
+                  <div><img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-ferarcosn-190819.jpg&fm=jpg" className="img-fluid" alt="" /></div>
+                  <div><img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-ferarcosn-190819.jpg&fm=jpg" className="img-fluid" alt="" /></div>
+                  <div><img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-ferarcosn-190819.jpg&fm=jpg" className="img-fluid" alt="" /></div>
+                  <div><img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-ferarcosn-190819.jpg&fm=jpg" className="img-fluid" alt="" /></div>
+                </div>
+            </div>
             <div className="col-6"></div>
           </div>
         </div>
