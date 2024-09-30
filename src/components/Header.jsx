@@ -34,7 +34,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">Sapa Zone</Link>
+                <Link className="text-white" to="/">Sapa Zone</Link>
               </h2>
             </div>
             <div className="col-5">
